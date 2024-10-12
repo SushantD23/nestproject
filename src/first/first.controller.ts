@@ -11,7 +11,7 @@ export class FirstController{
         return this.firstService.findAll();
     }
 
-    @Post()
+    @Post('create')
     create(@Body() first: First){
         return this.firstService.create(first)
     }
